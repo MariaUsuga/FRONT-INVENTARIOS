@@ -1,0 +1,651 @@
+{
+	"info": {
+		"_postman_id": "0115da7c-88fd-4fcc-abbd-dabac1c96b71",
+		"name": "InventariosNode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23488201"
+	},
+	"item": [
+		{
+			"name": "TipoEquipo",
+			"item": [
+				{
+					"name": "CreateTipoEquipo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"Computo\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/tipoequipos",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tipoequipos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Tipos Equipo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/tipoequipos?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tipoequipos"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Tipo Equipo por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/tipoequipos/632e5f06051574ef583c6728",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"632e5f06051574ef583c6728"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Tipo Equipo por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"CÓMPUTO\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/tipoequipos/632e5f06051574ef583c6728",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"632e5f06051574ef583c6728"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Tipo Equipo por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:4000/api/tipoequipos/632e5ec1051574ef583c671e",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"632e5ec1051574ef583c671e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado",
+			"item": [
+				{
+					"name": "Crear Estado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"otra cosa\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/estados",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Estados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/estados?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"estados"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Estado por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/estados/632e5f8a051574ef583c672f",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"estados",
+								"632e5f8a051574ef583c672f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Estado por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"estado\": true\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/estados/632e5f8a051574ef583c672f",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"estados",
+								"632e5f8a051574ef583c672f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Estado por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:4000/api/estados/632e601f051574ef583c673e",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"estados",
+								"632e601f051574ef583c673e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventario",
+			"item": [
+				{
+					"name": "Consultar Inventarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/inventarios",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"inventarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear inventario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"serial\": \"1111-2222-4447\",\n\t\"modelo\": \"2021\",\n\t\"descripcion\": \"\",\n\t\"foto\": \"\",\n\t\"color\": \"\",\n\t\"fechaCompra\": \"2022-01-01\",\n\t\"precio\": \"300\",\n\t\"usuario\": {\n\t\t\"_id\":\"632e63124c815f15afa381ca\"\n\t},\n\t\"marca\": {\n\t\t\"_id\": \"632e5b079388c67918dcb7e2\"\n\t},\n\t\"estado\": {\n\t\t\"_id\": \"632e5f8a051574ef583c672f\"\n\t},\n\t\"tipoEquipo\": {\n\t\t\"_id\": \"632e5f06051574ef583c6728\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/inventarios",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"inventarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marca",
+			"item": [
+				{
+					"name": "Crear Marca",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"Samsung\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/marcas",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"marcas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todas las marcas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/marcas?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"marcas"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar marca por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/marcas/632e5b229388c67918dcb7e8",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"marcas",
+								"632e5b229388c67918dcb7e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar marca por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"ACER+\",\n\t\"estado\": false\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/marcas/632e5b229388c67918dcb7e8",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"marcas",
+								"632e5b229388c67918dcb7e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar marca por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:4000/api/marcas/632e5b229388c67918dcb7e8",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"marcas",
+								"632e5b229388c67918dcb7e8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"Yeison Angulo\",\n\t\"email\": \"JSONAngulo@email.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todos los usuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/usuarios?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar usuario por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/usuarios/632e635a4c815f15afa381cd",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios",
+								"632e635a4c815f15afa381cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar usuario por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"pacho@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/usuarios/632e635a4c815f15afa381cd",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios",
+								"632e635a4c815f15afa381cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar usuario por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:4000/api/usuarios/632e635a4c815f15afa381cd",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios",
+								"632e635a4c815f15afa381cd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
